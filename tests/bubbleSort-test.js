@@ -43,7 +43,7 @@ describe('Bubble Sort', function() {
     //timed out at 50,000 and above
     var myArray = [];    
     
-    for (var i = 0; i < 20000; i++) {
+    for (var i = 0; i < 10000; i++) {
       myArray.push(randomNumber(0, 100))
     }
 
