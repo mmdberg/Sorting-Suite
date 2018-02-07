@@ -4,7 +4,7 @@ const insertionSort = require('../lib/insertionSort.js');
 describe('Insertion Sort', function() {
   function randomNumber(min, max) {
       return Math.floor(Math.random() * (max - min)) + min
-  }
+  };
 
   it('should sort a small array', function() {
     var myArray = [4, 5, 3, 2, 1];
@@ -34,7 +34,6 @@ describe('Insertion Sort', function() {
     insertionSort(myArray);
 
     assert.isAtLeast(myArray[1], myArray[0])
-
   });
 
   it('should sort large arrays', function() {

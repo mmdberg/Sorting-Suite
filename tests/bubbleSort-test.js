@@ -4,7 +4,7 @@ const bubbleSort = require('../lib/bubbleSort.js');
 describe('Bubble Sort', function() {
   function randomNumber(min, max) {
       return Math.floor(Math.random() * (max - min)) + min
-  }
+  };
 
   it('should sort a small array', function() {
     var myArray = [4, 5, 3, 2, 1];
@@ -26,7 +26,6 @@ describe('Bubble Sort', function() {
 
   it('should sort random arrays', function() {
 
-
     var myArray = [];    
     
     for (var i = 0; i < randomNumber(0, 100); i++) {
@@ -36,11 +35,9 @@ describe('Bubble Sort', function() {
     bubbleSort(myArray);
 
     assert.isAtLeast(myArray[1], myArray[0])
-
   });
 
   it('should sort large arrays', function() {
-    //timed out at 50,000 and above
     var myArray = [];    
     
     for (var i = 0; i < 10000; i++) {
